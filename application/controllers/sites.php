@@ -3,7 +3,7 @@
 	
 		public function index(){
 			$this->load->model('Sitesmodel');
-			$meta['title'] = 'Bran<strong>Brans</strong>';
+			$meta['title'] = 'BranBrans';
 			$data['sites'] = $this->Sitesmodel->get_sites();
 			$this->load->view('common/header', $meta);
 			$this->load->view('sites/index', $data);
@@ -12,7 +12,7 @@
 		
 		public function view($slug){
 			$this->load->model('Sitesmodel');
-			$meta['title'] = 'Bran<strong>Brans</strong>';
+			$meta['title'] = 'BranBrans';
 			$data['site'] = $this->Sitesmodel->get_site($slug);
 			$this->load->view('common/header', $meta);
 			$this->load->view('sites/view', $data);
@@ -20,7 +20,7 @@
 		}
 		
 		public function new_site(){
-			$meta['title'] = 'Bran<strong>Brans</strong>';
+			$meta['title'] = 'BranBrans';
 			$this->load->view('common/header', $meta);
 			$this->load->view('sites/new');
 			$this->load->view('common/footer');
@@ -33,7 +33,7 @@
 		
 		public function edit_site($slug){
 			$this->load->model('Sitesmodel');
-			$meta['title'] = 'Bran<strong>Brans</strong>';
+			$meta['title'] = 'BranBrans';
 			$data['site'] = $this->Sitesmodel->get_site($slug);
 			$this->load->view('common/header', $meta);
 			$this->load->view('sites/edit', $data);

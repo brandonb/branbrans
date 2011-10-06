@@ -7,5 +7,5 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<h1><?php echo $title ?></h1>
+			<h1>Bran<strong>Brans</strong></h1>
 			<p id="subtitle">all the stuff Bran Bran likes</p>
