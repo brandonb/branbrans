@@ -1,0 +1,198 @@
+/* === RESET STYLES === */
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,textarea,input,select,
+table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,
+q:before,q:after{content:'';content:none;}
+/* remember to define focus styles! */
+:focus{outline:0;}
+/* remember to highlight inserts somehow! */
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+/* tables still need 'cellspacing="0"' in the markup */
+table{border-collapse:collapse;border-spacing:0;}
+pre{white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;}
+
+/* BASIC CSS ELEMENTS */
+html{}
+body{
+	font-size:100%;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height:1.5;
+	color:#333;
+	text-shadow:0 1px 0 #fff;
+}
+/* === HEADINGS === */
+h1,h2,h3,h4,h5,h6{margin:0 0 0.5em;font-weight:normal;}
+h1{font-size:1.8em;}
+h2{font-size:1.4em;}
+h3{font-size:1.2em;}
+h4{font-size:1.1em;}
+h5{font-size:1em;}
+h6{font-size:0.8em;}
+/* === COMMON === */
+a{text-decoration:underline;}
+a:hover{text-decoration:none;}
+a:visited{color:purple}
+p{margin: 0 0 1em;}
+/* === LISTS === */
+ul,ol,dl{margin: 1em 0;}
+ul ul,ol ol,ul ol,ol ul{margin:0 1em 0;}
+ul>li{list-style:disc outside;margin:0 0 0 1.5em}
+ol>li{list-style:decimal outside;margin:0 0 0 1.5em}
+dt{font-size:1.2em;font-weight:bold;}
+dd{font-style:italic;padding:0 10px;}
+/* === TABLES === */
+table{width:100%;border:1px solid #333;}
+caption{font-size:1.2em;text-align:left;}
+th,td{vertical-align:middle;text-align:left;padding:2px 5px;}
+thead th,tfoot th{background:#333;color:#fff;text-shadow:0 -1px 0 #000;font-weight:normal;font-size:0.8em;text-transform:uppercase;}
+thead th{}
+tfoot th{}
+tbody{}
+tbody td{border-top:1px solid #333;}
+tr.odd td{background:#fff;}
+tr.even td{background:#eee;}
+tr.odd:hover td,tr.even:hover td,tr:hover td{background:#DFF2BF;}
+/* === FORMS === */
+fieldset{border:1px solid #aaa;padding:0 10px;margin:0 0 1em;
+}
+legend{font-size:1.2em;text-transform:uppercase;}
+label{text-transform:uppercase;font-size:0.8em;}
+input,select,textarea{border:1px solid #aaa;padding:5px;font-size:1.2em;text-align:left;font-family:Arial,sans-serif;}
+textarea{height:8em;width:95%;display:block;}
+input[type='checkbox'],input[type='radio'],input[type='file']{border:0;}
+input:focus,textarea:focus,select:focus{border:1px solid #333;background:#eee;}
+input[type='checkbox']+label,input[type='radio']+label{display:inline;font-size:1.2em;text-transform:none;}
+button{border:1px solid #aaa;background:#ccc;font-size:1.1em;cursor:pointer;margin:0 5px 0 0;padding:5px 15px;line-height:1;}
+button:hover{background:#ddd;}
+/* === MISC === */
+hr{background:#333;height:1px;border:0;}
+abbr,acronym{border-bottom:1px dotted #333;cursor:help;}
+pre{border:1px solid #aaa;background:#ccc;padding:10px;margin:1em 0;}
+blockquote{border-width:3px 0;border-color:#333;border-style:solid;padding:10px;margin:1em 0;background:#ccc;font-size:1.2em;font-family:Georgia,serif;font-style:italic;}
+sup,sub{font-size:0.6em;}
+sup{vertical-align:top;}
+sub{vertical-align:bottom;}
+.small{font-size:0.8em;}
+
+/* CLEARFIX */
+/* float clearing for IE6 */
+* html .clearfix{height: 1%;overflow: visible;}
+/* float clearing for IE7 */
+*+html .clearfix{min-height: 1%;}
+/* float clearing for everyone else */
+.clearfix:after{clear: both;content: "";display: block;height: 0;font-size: 0;}
+
+/* MESSAGES */
+#flash_notice, #flash_error,.message,#flash_success{
+	border: 2px solid #333;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 10px;
+	border-width: 2px 0;
+	background: #ccc;
+	font-style: italic;
+}
+.error,#flash_error{
+	color: #D8000C;
+	border-style: solid;
+	border-width: 2px 0;
+	border-color: #D8000C;
+	background: #FFBABA;
+	margin: 0 0 1em;
+}
+	.fieldWithErrors input, .fieldWithErrors select{
+		background: #FFBABA;
+	}
+.notice,#flash_notice{
+	color: #9F6000;
+	border-style: solid;
+	border-width: 2px 0;
+	border-color: #9F6000;
+	background: #FEEFB3;
+	margin: 0 0 1em;
+}
+.success,#flash_success{
+	color: #4F8A10;
+	border-width: 2px 0;
+	border-color: #4F8A10;
+	background: #DFF2BF;
+	margin: 0 0 1em;
+}
+.information,#flash_information{
+	color: #00529B;
+	border-style: solid;
+	border-width: 2px 0;
+	border-color: #00529B;
+	background: #BDE5F8;
+	margin: 0 0 1em;
+}
+
+/* LAYOUTS */
+#wrapper{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	_height:1%;
+	vertical-align:top;
+}
+html{
+	background: #ccc;
+}
+body{
+	text-align: center;
+}
+#wrapper{
+	text-align: left;
+	width: 720px;
+	padding: 20px 40px;
+	background: #eee;
+	border: 2px solid #fff;
+	margin: 20px 0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+h1{
+	margin: 0;
+	line-height: 1;
+	font-size: 36px;
+}
+h2{
+	line-height: 1;
+	font-weight: bold;
+}
+#subtitle{
+	font-style: italic;
+	font-size: 14px;
+	font-family: Georgia;
+}
+.favicon{
+	float: left;
+	margin: 0 10px 0 0;
+}
+#site_list{
+	margin: 0 0 1em;
+	padding: 0;
+	border-top: 1px solid #ccc;
+}
+	#site_list li{
+		display: block;
+		background-position: 10px center;
+		background-repeat: no-repeat;
+		margin: 0;
+		padding: 0 0 0 35px;
+		line-height: 30px;
+		border-bottom: 1px solid #ccc;
+	}
+	#site_list li:nth-child(odd){
+		background-color: #fff;
+	}
